@@ -1,12 +1,44 @@
-- 👋 Hi, I’m @Anushakopparthi
-- 👀 I’m interested in ...
-- 🌱 I’m currently learning ...
-- 💞️ I’m looking to collaborate on ...
-- 📫 How to reach me ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
+Here are some examples of data preprocessing in Python using popular libraries like Pandas and Scikit-learn:
 
-<!---
-Anushakopparthi/Anushakopparthi is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+*Handling Missing Values*
+```
+import pandas as pd
+
+# Replace missing values with mean
+data.fillna(data.mean(), inplace=True)
+
+# Replace missing values with median
+data.fillna(data.median(), inplace=True)
+```
+
+*Data Normalization*
+```
+from sklearn.preprocessing import MinMaxScaler
+
+scaler = MinMaxScaler()
+data_scaled = scaler.fit_transform(data)
+```
+
+*Encoding Categorical Variables*
+```
+from sklearn.preprocessing import OneHotEncoder
+
+encoder = OneHotEncoder()
+data_encoded = encoder.fit_transform(data)
+```
+
+*Removing Duplicates*
+```
+data.drop_duplicates(inplace=True)
+```
+
+*Data Transformation*
+```
+# Convert data type
+data['column_name'] = pd.to_datetime(data['column_name'])
+
+# Aggregate data
+data_grouped = data.groupby('column_name').mean()
+```
+
+These are just a few examples, but there are many more techniques and libraries available for data preprocessing! Let me know if you have any specific questions or need further assistance.
