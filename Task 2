@@ -1,0 +1,16 @@
+
+--->
+Here's a brief explanation of the code:
+
+1. Import necessary libraries (Scikit-learn)
+2. Load iris dataset (X = features, y = target variable)
+3. Split data into training (80%) and testing sets (20%)
+4. Train and evaluate two models:
+    - Logistic Regression (logreg)
+    - Random Forest Classifier (rf)
+5. Print evaluation metrics for each model:
+    - Accuracy
+    - Classification Report (precision, recall, F1-score)
+    - Confusion Matrix (true positives, false positives, true negatives, false negatives)
+
+This code compares the performance of two AI models on the iris dataset, helping you choose the best model for classification tasks.
